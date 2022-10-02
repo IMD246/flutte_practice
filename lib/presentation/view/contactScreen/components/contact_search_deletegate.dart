@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:inhirited_app/contact_list_builder.dart';
+import 'package:inhirited_app/presentation/view/contactScreen/components/contact_list_builder.dart';
 import 'contact_manager.dart';
 
 class ContactSearchDelegate extends SearchDelegate {

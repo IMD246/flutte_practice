@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:inhirited_app/counter.dart';
-import 'package:inhirited_app/counter_manager.dart';
-import 'package:inhirited_app/provider.dart';
+import 'package:inhirited_app/presentation/view/counter.dart';
+import 'package:inhirited_app/presentation/services/bloc/counter_manager.dart';
+import 'package:inhirited_app/presentation/services/provider/provider.dart';
 
 class CalenderScreen extends StatelessWidget {
   const CalenderScreen({super.key});

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:inhirited_app/observer.dart';
+import 'package:inhirited_app/presentation/view/observerView/observer.dart';
 
-import 'contact.dart';
+import '../../../../data/models/contact.dart';
 
 class ContactListBuilder extends StatelessWidget {
   const ContactListBuilder(

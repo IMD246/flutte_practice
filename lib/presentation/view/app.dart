@@ -1,8 +1,8 @@
 // ignore_for_file: file_names
 
 import 'package:flutter/material.dart';
-import 'package:inhirited_app/calender_screen.dart';
-import 'package:inhirited_app/contact_screen.dart';
+import 'package:inhirited_app/presentation/view/calender_screen.dart';
+import 'package:inhirited_app/presentation/view/contact_screen.dart';
 import 'inbox_screen.dart';
 
 class App extends StatefulWidget {

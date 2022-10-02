@@ -1,9 +1,10 @@
 import 'dart:async';
 
-import 'package:inhirited_app/contact_service.dart';
+import 'package:inhirited_app/data/repository/contact_service.dart';
 import 'package:rxdart/rxdart.dart';
 
-import 'contact.dart';
+import '../../../../data/models/contact.dart';
+
 
 class ContactManager {
   final BehaviorSubject<int> _contactCount = BehaviorSubject<int>();

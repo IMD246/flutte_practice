@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:inhirited_app/contact_manager.dart';
-import 'package:inhirited_app/contact_search_deletegate.dart';
-import 'package:inhirited_app/provider.dart';
-import 'contact_counter.dart';
-import 'contact_list_builder.dart';
+import 'package:inhirited_app/presentation/services/provider/provider.dart';
+import 'package:inhirited_app/presentation/view/contactScreen/components/contact_counter.dart';
+import 'package:inhirited_app/presentation/view/contactScreen/components/contact_search_deletegate.dart';
+import 'contactScreen/components/contact_list_builder.dart';
+import 'contactScreen/components/contact_manager.dart';
 
 class ContactScreen extends StatelessWidget {
   const ContactScreen({super.key});

@@ -1,6 +1,6 @@
-import 'package:inhirited_app/contact_manager.dart';
 
-import 'counter_manager.dart';
+import '../../view/contactScreen/components/contact_manager.dart';
+import '../bloc/counter_manager.dart';
 
 class Overseer {
   Map<dynamic, dynamic> repository = {};
