@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:inhirited_app/presentation/services/bloc/counter_manager.dart';
-import 'package:inhirited_app/presentation/view/observerView/observer.dart';
+import '../services/bloc/counter_manager.dart';
+import '../widgets/observer.dart';
 import 'package:inhirited_app/presentation/services/provider/provider.dart';
 
 class Counter extends StatelessWidget {

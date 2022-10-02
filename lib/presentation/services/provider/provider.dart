@@ -1,5 +1,5 @@
 import 'package:flutter/cupertino.dart';
-import 'package:inhirited_app/presentation/services/provider/overseer.dart';
+import 'overseer.dart';
 
 class Provider extends InheritedWidget {
   final Overseer data;

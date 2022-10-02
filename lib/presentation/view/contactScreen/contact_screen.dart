@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:inhirited_app/presentation/services/provider/provider.dart';
-import 'package:inhirited_app/presentation/view/contactScreen/components/contact_counter.dart';
-import 'package:inhirited_app/presentation/view/contactScreen/components/contact_search_deletegate.dart';
-import 'contactScreen/components/contact_list_builder.dart';
-import 'contactScreen/components/contact_manager.dart';
+
+import '../../services/bloc/contact_manager.dart';
+import '../../services/provider/provider.dart';
+import 'components/contact_counter.dart';
+import 'components/contact_list_builder.dart';
+import 'components/contact_search_deletegate.dart';
 
 class ContactScreen extends StatelessWidget {
   const ContactScreen({super.key});
@@ -12,6 +13,7 @@ class ContactScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     final ContactManager contactManager =
         Provider.of(context).fetch(ContactManager);
+    contactManager.inFilter.add("");
     return Scaffold(
       appBar: AppBar(
         actions: [
@@ -31,7 +33,7 @@ class ContactScreen extends StatelessWidget {
         ],
       ),
       body: ContactListBuilder(
-        stream: contactManager.browse$(query: null),
+        stream: contactManager.browse$,
         builder: (context, contacts) {
           return ListView.separated(
             itemBuilder: (context, index) {
@@ -52,4 +54,3 @@ class ContactScreen extends StatelessWidget {
     );
   }
 }
-

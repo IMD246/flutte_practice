@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:inhirited_app/presentation/view/contactScreen/components/contact_list_builder.dart';
-import 'contact_manager.dart';
+
+import '../../../services/bloc/contact_manager.dart';
+import 'contact_list_builder.dart';
 
 class ContactSearchDelegate extends SearchDelegate {
   final ContactManager manager;
@@ -37,8 +38,9 @@ class ContactSearchDelegate extends SearchDelegate {
         ),
       );
     }
+    manager.inFilter.add(query);
     return ContactListBuilder(
-      stream: manager.browse$(query: query),
+      stream: manager.browse$,
       builder: (context, contacts) {
         return ListView.separated(
           itemBuilder: (context, index) {

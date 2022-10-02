@@ -1,7 +1,7 @@
 import 'dart:convert';
 
 import 'package:http/http.dart' as http;
-import 'package:inhirited_app/data/models/contact.dart';
+import '../models/contact.dart';
 
 class ContactService {
   static const String _url = "https://jsonplaceholder.typicode.com/users";

@@ -2,7 +2,8 @@
 
 import 'package:flutter/material.dart';
 import 'package:inhirited_app/presentation/view/calender_screen.dart';
-import 'package:inhirited_app/presentation/view/contact_screen.dart';
+import 'package:inhirited_app/presentation/view/contactScreen/contact_screen.dart';
+
 import 'inbox_screen.dart';
 
 class App extends StatefulWidget {

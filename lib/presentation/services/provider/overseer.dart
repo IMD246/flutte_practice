@@ -1,5 +1,5 @@
 
-import '../../view/contactScreen/components/contact_manager.dart';
+import '../bloc/contact_manager.dart';
 import '../bloc/counter_manager.dart';
 
 class Overseer {

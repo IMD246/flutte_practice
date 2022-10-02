@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:inhirited_app/presentation/view/observerView/observer.dart';
-import 'package:inhirited_app/presentation/services/provider/provider.dart';
-import 'package:inhirited_app/presentation/view/contactScreen/components/contact_manager.dart';
+
+import '../../../services/provider/provider.dart';
+import '../../../widgets/observer.dart';
+import '../../../services/bloc/contact_manager.dart';
 
 class ContactCounter extends StatelessWidget {
   const ContactCounter({

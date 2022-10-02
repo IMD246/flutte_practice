@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:inhirited_app/presentation/view/app.dart';
-import 'package:inhirited_app/presentation/services/provider/overseer.dart';
-import 'package:inhirited_app/presentation/services/provider/provider.dart';
-import 'package:inhirited_app/presentation/services/provider/ugly_provider.dart';
+import 'presentation/view/app.dart';
+import 'presentation/services/provider/overseer.dart';
+import 'presentation/services/provider/provider.dart';
+import 'presentation/services/provider/ugly_provider.dart';
 
 void main() {
   runApp(const EmailApp());
